@@ -1,1 +1,48 @@
 /* TODO: Make it awesome */
+body {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 42px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+header li {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    text-align: center;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+main li {
+    list-style: none;
+    padding: 5px;
+
+}
+
+#catalog legend {
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+label:first-child span {
+    padding: 50px;
+}
+
+main {
+    margin-bottom: 100px;
+}
