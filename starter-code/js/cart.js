@@ -37,6 +37,18 @@ function showCart() {
   for (var i = 0; i < cart.length; i++){
     var trEl = document.createElement('tr');
     tbodyEl.appendChild(trEl);
+    var tdEl1 = document.createElement('td');
+    var tdEl2 = document.createElement('td');
+    var tdEl3 = document.createElement('td');
+    tdEl1.textContent = 'delete';
+    tdEl2.textContent = cart[i].product;
+    tdEl3.textContent = cart[i].quantity;
+
+    trEl.appendChild(tdEl1);
+    trEl.appendChild(tdEl2);
+    trEl.appendChild(tdEl3);
+    
+
     
   }
   // TODO: Create a TR
