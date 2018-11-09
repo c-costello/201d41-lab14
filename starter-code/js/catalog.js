@@ -13,6 +13,7 @@ function populateForm() {
   var selectElement = document.getElementById('items');
   for (var i in Product.allProducts) {
     var optionsEl = document.createElement('option');
+    optionsEl.id = 'opt'+[i];
     selectElement.appendChild(optionsEl);
     optionsEl.value = Product.allProducts[i].name;
     optionsEl.textContent = Product.allProducts[i].name;
@@ -37,9 +38,19 @@ function handleSubmit(event) {
 
 // TODO: Add the selected item and quantity to the cart
 function addSelectedItemToCart() {
+
+  var itemEl = document.getElementById('items');
+  var a = itemEl.options[itemEl.selectedIndex].value;
+  console.log(a);
+
+  var quantityEl = document.getElementById('quantity');
+  var b = quantityEl.value;
+  console.log(b);
   // TODO: suss out the item picked from the select list
   // TODO: get the quantity
   // TODO: using those, add one item to the Cart
+  new CartItem(a,b);
+
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
