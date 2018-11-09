@@ -20,7 +20,7 @@ main h1 {
 
 header li {
     display: inline-block;
-    
+    vertical-align: baseline;
 }
 
 nav {
@@ -43,7 +43,8 @@ main li {
 }
 
 label:first-child span {
-    padding: 50px;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 main {
@@ -55,5 +56,5 @@ main {
 }
 
 .deck col-1 {
-    margin-left: 0px;
+    padding-left: 0px;
 }
