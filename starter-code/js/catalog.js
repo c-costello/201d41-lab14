@@ -65,6 +65,13 @@ function updateCounter() {
 }
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
 function updateCartPreview() {
+  var itemEl = document.getElementById('items');
+  var item = itemEl.options[itemEl.selectedIndex].value;
+  console.log(item);
+
+  var quantityEl = document.getElementById('quantity');
+  var quantity = quantityEl.value;
+  console.log(quantity); 
   // TODO: Get the item and quantity from the form
   // TODO: Add a new element to the cartContents div with that information
 }
