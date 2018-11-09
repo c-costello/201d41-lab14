@@ -30,10 +30,27 @@ function clearCart() {
   
 // TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
 function showCart() {
-  
-  // TODO: Find the table body
 
+  // TODO: Find the table body
+  var tbodyEl = document.getElementsByTagName('tbody'); 
   // TODO: Iterate over the items in the cart
+  for (var i = 0; i < cart.length; i++){
+    var trEl = document.createElement('tr');
+    tbodyEl.appendChild(trEl);
+    var tdEl1 = document.createElement('td');
+    var tdEl2 = document.createElement('td');
+    var tdEl3 = document.createElement('td');
+    tdEl1.textContent = 'delete';
+    tdEl2.textContent = cart[i].product;
+    tdEl3.textContent = cart[i].quantity;
+
+    trEl.appendChild(tdEl1);
+    trEl.appendChild(tdEl2);
+    trEl.appendChild(tdEl3);
+    
+
+    
+  }
   // TODO: Create a TR
   // TODO: Create a TD for the delete link, quantity,  and the item
   // TODO: Add the TR to the TBODY and each of the TD's to the TR
