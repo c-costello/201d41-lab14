@@ -21,10 +21,10 @@ function renderCart() {
 // TODO: Remove all of the rows (tr) in the cart table (tbody)
 function clearCart() {
   var trElCheck = document.getElementById('table-rows');
-  if (trElCheck) {
+  if (cart) {
     trElCheck.remove();
   }
-  trElCheck.id = 'table-row';
+
 }
 
   
@@ -46,11 +46,9 @@ function showCart() {
 
     trEl.appendChild(tdEl1);
     trEl.appendChild(tdEl2);
-    trEl.appendChild(tdEl3);
-    
-
-    
+    trEl.appendChild(tdEl3); 
   }
+  trEl.id = 'table-rows';
   // TODO: Create a TR
   // TODO: Create a TD for the delete link, quantity,  and the item
   // TODO: Add the TR to the TBODY and each of the TD's to the TR
